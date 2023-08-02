@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentHub - Hire Top Tech Talent</title>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+    <style>
+      /* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Top Header */
+.header-top {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 4px solid #007bff;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.nav-link {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f8f9fa;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #333;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    padding: 12px 24px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+}
+
+.about h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.about p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Services Section */
+.services {
+    padding: 80px 0;
+}
+
+.services h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card {
+    border: 2px solid #007bff;
+    transition: border-color 0.3s ease;
+}
+
+.card:hover {
+    border-color: #0056b3;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Candidate Submissions Section */
+.candidate-submissions {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.candidate-submissions h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.candidate-submissions p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Lightning Fast Submissions Section */
+.lightning-fast-submissions {
+    padding: 80px 0;
+}
+
+.lightning-fast-submissions h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.lightning-fast-submissions p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* More Services Boxes Section */
+.more-services {
+    padding: 80px 0;
+}
+
+.outlined-box {
+    border: 2px solid #007bff;
+    background-color: #f8f9fa;
+    padding: 20px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.outlined-box:hover {
+    border-color: #0056b3;
+    background-color: #e9ecef;
+}
+
+.box-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.box-text {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+}
+
+.contact h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group label {
+    font-size: 18px;
+    color: #333;
+}
+
+.form-control {
+    font-size: 16px;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Social Media Icons */
+.social-icons {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.social-icon {
+    display: inline-block;
+    font-size: 28px;
+    color: #333;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+
+<body>
+    
+    <header class="header-top bg-primary text-white text-center py-2">
+        <div class="container">
+            <p>Contact us: info@talenthub.com | +91-123-4567890</p>
+        </div>
+    </header>
+
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">TalentHub</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero bg-light text-center py-5">
+        <div class="container">
+            <h1>Hire Top Tech Talent with TalentHub</h1>
+            <p>Find the best software engineers, product managers, data scientists, and more for your company.</p>
+            <a href="#" class="btn btn-primary btn-lg">Book a Demo</a>
+        </div>
+    </section>
+
+    
+    <section class="about section bg-light" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="path/to/your/image" alt="About TalentHub" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h2>About TalentHub</h2>
+                    <p>TalentHub is a recruitment startup that connects companies in India and worldwide with top tech
+                        talent. We specialize in hiring software engineers, product managers, data scientists, and other
+                        tech professionals to help your company thrive in the digital age.</p>
+                    <p>Our team of expert recruiters and advanced technology ensure that you get access to the best
+                        candidates for your specific needs. Whether you are a startup, SME, or enterprise, we can assist
+                        you in building a strong tech team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="services section bg-light" id="services">
+        <div class="container">
+            <h2 class="text-center">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="path/to/your/image" class="card-img-top" alt="Service 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Engineers</h5>
+                            <p class="card-text">Hire skilled software engineers with expertise in various
+                                programming languages and technologies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="path/to/your/image" class="card-img-top" alt="Service 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Product Managers</h5>
+                            <p class="card-text">Find experienced product managers to lead your product development and
+                                strategy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="path/to/your/image" class="card-img-top" alt="Service 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Scientists</h5>
+                            <p class="card-text">Recruit data scientists with strong analytical and problem-solving
+                                skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="candidate-submissions section bg-light">
+        <div class="container">
+            <h2 class="text-center">Streamline Candidate Submissions</h2>
+            <p>Say goodbye to back and forth emails and attachments. Say hello to a new era of candidate
+                presentation.</p>
+            <p>With TalentHub, forward-thinking staffing teams create beautifully branded candidate
+                submissions that clients can access anywhere and anytime.</p>
+            <a href="#" class="btn btn-primary btn-lg">Book a Demo</a>
+        </div>
+    </section>
+
+   
+    <section class="lightning-fast-submissions section bg-light">
+        <div class="container">
+            <h2 class="text-center">Lightning Fast Submissions, Right from Within TalentHub</h2>
+            <p>Give your team back their time on creating candidate submittals. Simply pick a candidate from
+                within TalentHub and share a link with your clients.</p>
+            <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+        </div>
+    </section>
+
+   
+    <section class="more-services section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="outlined-box box-1">
+                        <h2 class="box-title">Tech Engineers</h2>
+                        <p class="box-text">Hire top tech engineers for your software projects.</p>
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="outlined-box box-2">
+                        <h2 class="box-title">Product Specialists</h2>
+                        <p class="box-text">Find product specialists to develop and launch innovative products.</p>
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="outlined-box box-3">
+                        <h2 class="box-title">Data Experts</h2>
+                        <p class="box-text">Recruit data experts to analyze and interpret your business data.</p>
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="outlined-box box-4">
+                        <h2 class="box-title">AI Specialists</h2>
+                        <p class="box-text">Hire AI specialists to implement artificial intelligence solutions.</p>
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="outlined-box box-5">
+                        <h2 class="box-title">UI/UX Designers</h2>
+                        <p class="box-text">Find skilled UI/UX designers for creating user-friendly interfaces.</p>
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="contact section bg-light" id="contact">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea class="form-control" id="message" rows="4"
+                                placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2023 TalentHub. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <!-- Link Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+    <script>
+        
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Your JavaScript Code here -->
+    <script>
+        // Handle form submission
+        $(document).ready(function () {
+            $("form").submit(function (event) {
+                event.preventDefault();
+                var formData = $(this).serialize();
+                // Replace this with your actual form submission logic
+                // For example, you can use AJAX to send the form data to your server
+                // and display a success message on successful submission
+                alert("Form submitted successfully!");
+                // Clear the form after submission
+                $(this)[0].reset();
+            });
+        });
+
+        // other JavaScript/jQuery code here
+        
+    </script>
+
+</body>
+
+</html>
